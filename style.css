@@ -228,8 +228,6 @@ ul {
 }
 .statistic-list {
   display: flex;
-
-  width: 1440px;
   gap: 50px;
   justify-content: center;
   align-items: center;
@@ -267,8 +265,11 @@ ul {
 .hidden {
   visibility: hidden;
 }
+@media screen and (min-width: 1120px) {
+}
 /* ========== advantages========== */
 .advantage-section {
+  padding: 30px 0;
 }
 
 .advantage-top-container {
@@ -283,18 +284,15 @@ ul {
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
-  line-height: 157%; /* 78.5px */
 }
 .advantage-text {
 }
 .advantage-list {
   display: grid;
-  grid-template-columns: 20vw 20vw 20vw;
-  grid-template-rows: 240px 240px;
+  grid-template-columns: 40vw 40vw;
+  grid-template-rows: 200px 200px 200px;
   justify-content: center;
   align-items: center;
-  grid-gap: 1rem;
-  margin-top: 40px;
 }
 .advantage-item {
   position: relative;
@@ -303,7 +301,7 @@ ul {
   color: rgba(205, 162, 116, 0.2);
   text-align: center;
   font-family: Georgia;
-  font-size: 150px;
+  font-size: 100px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 225px */
@@ -314,12 +312,39 @@ ul {
   color: #292f36;
   text-align: center;
   font-family: Inter;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 39px; /* 156% */
-  letter-spacing: 0.22px;
 }
 .advantage-text-second {
+}
+@media screen and (min-width: 1120px) {
+  .advantage-number {
+    color: rgba(205, 162, 116, 0.2);
+    text-align: center;
+    font-family: Georgia;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 225px */
+    position: absolute;
+    bottom: 0px;
+  }
+  .advantage-list {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 240px 240px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+    margin-top: 40px;
+  }
+  .advantage-name {
+    color: #292f36;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+  }
 }
 /* ====== portfolio======== */
 .portfolio-section {
@@ -515,10 +540,9 @@ ul.price-list li::before {
 .insta-link:hover,
 .insta-link:active,
 .insta-link:focus {
-  border: 1px solid rgba(205, 162, 116, 0.20);
+  border: 1px solid rgba(205, 162, 116, 0.2);
 
-  ;
-  color: #4D5053;
+  color: #4d5053;
 }
 /* =========footer=========== */
 .footer {
